@@ -4,10 +4,10 @@ Name:		gftp
 Version:	2.0.8pre1
 Release:	1
 Epoch:		1
+License:	GPL
 Group:		X11/Applications/Networking
 Group(de):	X11/Applikationen/Netzwerkwesen
 Group(pl):	X11/Aplikacje/Sieciowe
-License:	GPL
 Source0:	http://gftp.seul.org/%{name}-%{version}.tar.gz
 Patch0:		%{name}-pld.patch
 URL:		http://gftp.seul.org/
