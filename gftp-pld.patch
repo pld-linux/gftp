@@ -4,11 +4,11 @@
  password=@EMAIL@
  account=
  
-+[PLD Sites/PLD stable]
++[PLD Sites/PLD Ra]
 +hostname=ftp.pld.org.pl
 +port=21
 +protocol=FTP
-+remote directory=/stable
++remote directory=/dists/Ra
 +local directory=
 +username=anonymous
 +password=@EMAIL@
