@@ -14,10 +14,9 @@ BuildRequires:	gtk+-devel >= 1.2.3
 BuildRequires:	glib-devel >= 1.2.3
 BuildRequires:	XFree86-devel
 BuildRequires:	gettext-devel
-BuildRoot:	/tmp/%{name}-%{version}-root
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define 	_prefix		/usr/X11R6
-%define		_applnkdir	%{_datadir}/applnk
 
 %description
 gFTP is a multithreaded FTP client for X Windows written using Gtk. It
