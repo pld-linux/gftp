@@ -84,7 +84,7 @@ gFTP ╓ багатонитковим FTP кл╕╓нтом для X Window, написаним з
 %build
 rm -f missing
 %{__gettextize}
-aclocal
+%{__aclocal}
 %{__autoconf}
 %{__automake}
 %configure
