@@ -12,7 +12,8 @@ Source2:	gftp.wmconfig
 Patch0:		gftp-opt.patch
 Patch1:		gftp-pld.patch
 URL:		http://www.newwave.net/~masneyb/
-Requires:	gtk+ = 1.2.1
+BuildPrereq:	gtk+-devel
+%requires_pkg	gtk+
 Buildroot:      /tmp/%{name}-%{version}-root
 
 %description
@@ -28,7 +29,7 @@ transferów, kolejkowanie przesy³anych plików, posiada bardzo przyjemnego
 zarz±dcê po³±czeñ i wiele innych mo¿liwo¶ci.
 
 %prep
-%setup -q
+%setup  -q
 %patch0 -p1
 %patch1 -p1
 
