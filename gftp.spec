@@ -34,7 +34,6 @@ zarz±dzanie po³±czeniami i wiele innych mo¿liwo¶ci.
 %prep
 %setup -q
 %patch0 -p1
-%patch1 -p1
 
 %build
 gettextize --copy --force
