@@ -1,10 +1,19 @@
---- sample.gftp/gftprc~	Thu Jul  8 16:40:19 1999
-+++ sample.gftp/gftprc	Fri Jul  9 20:32:17 1999
-@@ -150,6 +150,7 @@
- host=General Sites/Tux.Org:ftp.tux.org:21:/pub:anonymous:@EMAIL@:1:
- host=General Sites/TSX-11:tsx-11.mit.edu:21:/pub/linux:anonymous:@EMAIL@:1:
- host=General Sites/Wcarchive:ftp.cdrom.com:21:/:anonymous:@EMAIL@:1:
-+host=PLD Sites/PLD:ftp.pld.org.pl:21:/stable:anonymous:@EMAIL@:1
- host=RedHat Sites/FalseHope RPMs:ftp.falsehope.com:21:/pub:anonymous:@EMAIL@:1:
- host=RedHat Sites/Freshmeat RPMs:ftp.freshmeat.net:21:/pub/rpms:anonymous:@EMAIL@:1:
- host=RedHat Sites/RH Contrib:contrib.redhat.com:21:/pub:anonymous:@EMAIL@:1:
+--- gftp-2.0.6/sample.gftp/bookmarks.pius	Mon Nov 22 14:24:44 1999
++++ gftp-2.0.6/sample.gftp/bookmarks	Fri Dec 10 19:11:35 1999
+@@ -122,6 +122,16 @@
+ password=@EMAIL@
+ account=
+ 
++[PLD Sites/PLD stable]
++hostname=ftp.pld.org.pl
++port=21
++protocol=FTP
++remote directory=/stable
++local directory=
++username=anonymous
++password=@EMAIL@
++account=
++
+ [RedHat Sites/FalseHope RPMs]
+ hostname=ftp.falsehope.com
+ port=21
