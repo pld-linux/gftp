@@ -13,7 +13,7 @@ Patch0:		gftp-DESTDIR.patch
 Patch1:		gftp-pld.patch
 URL:		http://www.newwave.net/~masneyb/
 BuildPrereq:	gtk+-devel
-Requires:	gtk+ >= 1.2.0
+BuildPrereq:	XFree86-devel
 Buildroot:      /tmp/%{name}-%{version}-root
 
 %description
@@ -66,7 +66,7 @@ rm -rf $RPM_BUILD_ROOT
 /usr/X11R6/share/gftp/gftprc
 /usr/X11R6/share/gftp/*.xpm
 
-%config(missingok) /etc/X11/wmconfig/gftp
+/etc/X11/wmconfig/gftp
 
 %changelog
 * Mon Apr 19 1999 Piotr Czerwiñski <pius@pld.org.pl>
