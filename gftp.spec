@@ -12,6 +12,8 @@ Source0:	http://gftp.seul.org/%{name}-%{version}.tar.gz
 Patch0:		%{name}-pld.patch
 URL:		http://gftp.seul.org/
 BuildRequires:	gtk+-devel >= 1.2.3
+BuildRequires:	autoconf
+BuildRequires:	automake
 BuildRequires:	gettext-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
