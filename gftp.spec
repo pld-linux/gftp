@@ -66,6 +66,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %dir %{_datadir}/gftp
 %{_datadir}/gftp/*.xpm
+%{_datadir}/gftp/COPYING
 %config %{_datadir}/gftp/gftprc
 %config %{_datadir}/gftp/bookmarks
 
