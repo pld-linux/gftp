@@ -7,7 +7,7 @@ Summary(ru):	Многонитевый FTP клиент для X Window
 Summary(uk):	Багатонитковий FTP кл╕╓нт для X Window
 Name:		gftp
 Version:	2.0.14
-Release:	1
+Release:	2
 Epoch:		2
 License:	GPL
 Group:		X11/Applications/Networking
@@ -15,6 +15,7 @@ Source0:	http://gftp.seul.org/%{name}-%{version}.tar.gz
 Patch0:		%{name}-pld.patch
 Patch1:		%{name}-no_libnsl.patch
 Patch2:		%{name}-am_fixes.patch
+Patch3:		%{name}-desktop.patch
 URL:		http://gftp.seul.org/
 BuildRequires:	gtk+-devel >= 1.2.3
 BuildRequires:	autoconf
@@ -80,6 +81,7 @@ gFTP ╓ багатонитковим FTP кл╕╓нтом для X Window, написаним з
 %patch0 -p1
 %patch1 -p1
 %patch2 -p1
+%patch3 -p1
 
 %build
 rm -f missing
