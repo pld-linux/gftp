@@ -28,7 +28,7 @@
 +Comment[pl]=WielowÄ…tkowy klient FTP
  Comment[pt_BR]=Cliente FTP multi-tarefa
 -Comment[zh_TW.Big5]=¦h½uºü  ftp client
-+Comment[zh_TW.Big5]=å¤šç·šç·’  ftp client
++Comment[zh_TW]=å¤šç·šç·’  ftp client
  Exec=gftp
  Icon=gftp.png
 -Terminal=0
