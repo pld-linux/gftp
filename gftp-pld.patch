@@ -1,5 +1,5 @@
---- gftp-2.0.6/sample.gftp/bookmarks.pius	Mon Nov 22 14:24:44 1999
-+++ gftp-2.0.6/sample.gftp/bookmarks	Fri Dec 10 19:11:35 1999
+--- gftp-2.0.6/docs/sample.gftp/bookmarks.pius	Mon Nov 22 14:24:44 1999
++++ gftp-2.0.6/docs/sample.gftp/bookmarks	Fri Dec 10 19:11:35 1999
 @@ -122,6 +122,16 @@
  password=@EMAIL@
  account=
