@@ -16,7 +16,7 @@ BuildRequires:	glib-devel
 BuildRequires:	XFree86-devel
 BuildRoot:	/tmp/%{name}-%{version}-root
 
-%define _prefix	/usr/X11R6
+%define 	_prefix		/usr/X11R6
 
 %description
 gFTP is a multithreaded FTP client for X Window written using Gtk. It
