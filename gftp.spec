@@ -73,4 +73,4 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/pixmaps/gftp.png
 %{_mandir}/man1/*
 
-%{_applnkdir}/Networking/FTP/gftp.desktop
+%{_applnkdir}/Internet/gftp.desktop
