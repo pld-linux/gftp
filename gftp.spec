@@ -80,7 +80,7 @@ gFTP ╓ багатонитковим FTP кл╕╓нтом для X Window, написаним з
 закладинок, кнопка зупинки та багато ╕ншого.
 
 %prep
-%setup -q -n %{name}-%{version}
+%setup -q
 %patch0 -p1
 %patch1 -p1
 %patch2 -p1
