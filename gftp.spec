@@ -1,12 +1,13 @@
 Summary:	Multithreaded FTP client for X Window
 Summary(es):	Cliente FTP multithreaded para el X Windows
+Summary(ja):	X Window System Õ—•ﬁ•Î•¡•π•Ï•√•… FTP •Ø•È•§•¢•Û•»
 Summary(pl):	Wielow±tkowy klient FTP dla X Window
 Summary(pt_BR):	Cliente FTP multithreaded para o X Window
 Summary(ru):	ÌŒœ«œŒ…‘≈◊Ÿ  FTP ÀÃ…≈Œ‘ ƒÃ— X Window
 Summary(uk):	‚¡«¡‘œŒ…‘Àœ◊…  FTP ÀÃ¶§Œ‘ ƒÃ— X Window
 Name:		gftp
-Version:	2.0.11
-Release:	2
+Version:	2.0.13
+Release:	1
 Epoch:		2
 License:	GPL
 Group:		X11/Applications/Networking
@@ -33,6 +34,15 @@ many more features.
 
 %description -l es
 Cliente FTP multithreaded para el X Windows.
+
+%description -l ja
+gFTP §œ X Window System Õ—§Œ•ﬁ•Î•¡•π•Ï•√•… FTP •Ø•È•§•¢•Û•»§«§π°£
+gFTP §œ°¢ £øÙ•’•°•§•Î§Œ∆±ª˛•¿•¶•Û•Ì°º•…§‰°¢√Ê√«§∑§ø≈æ¡˜§Œ
+•Ï•∏•Â°º•‡°¢ £øÙ§Œ•’•°•§•Î§Œ•¿•¶•Û•Ì°º•…ÕΩÃÛ°¢•«•£•Ï•Ø•»•Í§¥§»§Œ
+•¿•¶•Û•Ì°º•…°¢ FTP •µ•§•»§Œ•÷•√•Ø•ﬁ°º•Ø°¢ FTP •µ•§•»§Œ•«•£•Ï•Ø•»•Í
+§Œ•≠•„•√•∑•Â°¢•Ì°º•´•Î§»•Í•‚°º•»§Œ•’•°•§•Î§Œ•—°º•ﬂ•√•∑•Á•Û§Œ —ππ°¢
+•…•È•√•∞•¢•Û•…•…•Ì•√•◊°¢•≥•Õ•Ø•∑•Á•Û•ﬁ•Õ°º•∏•„°¢§Ω§Œ¬æ§§§Ì§§§Ì§ 
+µ°«Ω§Úª˝§√§∆§§§ﬁ§π°£
 
 %description -l pl
 gFTP jest wielow±tkowym klientem FTP dla X Window wykorzystuj±cym
@@ -87,8 +97,6 @@ rm -rf $RPM_BUILD_ROOT
 	DESTDIR=$RPM_BUILD_ROOT \
 	Utilitiesdir=%{_applnkdir}/Network/FTP
 
-gzip -9nf README TODO THANKS docs/USERS-GUIDE ChangeLog
-
 %find_lang %{name}
 
 %clean
@@ -96,7 +104,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files -f %{name}.lang
 %defattr(644,root,root,755)
-%doc *.gz docs/*.gz
+%doc README TODO THANKS docs/USERS-GUIDE ChangeLog
 %attr(755,root,root) %{_bindir}/*
 %dir %{_datadir}/gftp
 %{_datadir}/gftp/*.xpm
