@@ -1,15 +1,15 @@
 Summary:	Multithreaded FTP client for X Window
 Summary(pl):	Wielow±tkowy klient FTP dla X Window
 Name:		gftp
-Version:	1.12	
-Release:	4
+Version:	1.13	
+Release:	1
 Group:		X11/Applications/Networking
 Group(pl):	X11/Aplikacje/Sieciowe
 Copyright:	GPL
 Source0:	http://www.newwave.net/~masneyb/%{name}-%{version}.tar.gz
 Source1:	gftp.desktop
 Source2:	gftp.wmconfig
-Patch0:		gftp-opt.patch
+Patch0:		gftp-DESTDIR.patch
 Patch1:		gftp-pld.patch
 URL:		http://www.newwave.net/~masneyb/
 Requires:	gtk+ = 1.2.1
@@ -28,40 +28,54 @@ transferów, kolejkowanie przesy³anych plików, posiada bardzo przyjemnego
 zarz±dcê po³±czeñ i wiele innych mo¿liwo¶ci.
 
 %prep
-%setup -q
+%setup  -q
 %patch0 -p1
 %patch1 -p1
 
 %build
-make OPTFLAGS="$RPM_OPT_FLAGS -Wall" \
-	PREFIX="/usr/X11R6"
+CFLAGS="$RPM_OPT_FLAGS" \
+./configure \
+	--prefix=/usr/X11R6 \
+	--with-x
+
+make 
 
 %install
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT/usr/X11R6/{bin,share/{gftp,gnome/apps/Internet}} \
 	$RPM_BUILD_ROOT/etc/X11/wmconfig
 
-make install PREFIX=$RPM_BUILD_ROOT/usr/X11R6 
+make install DESTDIR="$RPM_BUILD_ROOT"
 
 install %{SOURCE1} $RPM_BUILD_ROOT/usr/X11R6/share/gnome/apps/Internet
 install %{SOURCE2} $RPM_BUILD_ROOT/etc/X11/wmconfig/gftp
 
-gzip -9nf README TODO CHANGELOG
+gzip -9nf README TODO CHANGELOG eplf.txt
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc README.gz TODO.gz CHANGELOG.gz
+%doc {README,TODO,CHANGELOG,eplf.txt}.gz
 
 %attr(755,root,root) /usr/X11R6/bin/gftp
 /usr/X11R6/share/gnome/apps/Internet/gftp.desktop
-/usr/X11R6/share/gftp
+%dir /usr/X11R6/share/gftp
+/usr/X11R6/share/gftp/gftprc
+/usr/X11R6/share/gftp/*.xpm
 
 %config(missingok) /etc/X11/wmconfig/gftp
 
 %changelog
+* Thu Apr  1 1999 Piotr Czerwiñski <pius@pld.org.pl>
+  [1.13-1]
+- updated to 1.13,
+- added using ./configure in %build,
+- removed gftp-opt.patch (we don't need this anymore),
+- "make install" with using DESTDIR (gftp-DESTDIR.patch),
+- minor changes.
+
 * Mon Mar 29 1999 Piotr Czerwiñski <pius@pld.org.pl>
   [1.12-4]
 - added wmconfig file,
