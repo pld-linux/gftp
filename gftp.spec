@@ -1,8 +1,8 @@
 Summary:	Multithreaded FTP client for X Window
 Summary(pl):	Wielow±tkowy klient FTP dla X Window
 Name:		gftp
-Version:	2.0.7b
-Release:	3
+Version:	2.0.8pre1
+Release:	1
 Epoch:		1
 Group:		X11/Applications/Networking
 Group(de):	X11/Applikationen/Netzwerkwesen
@@ -60,9 +60,7 @@ rm -rf $RPM_BUILD_ROOT
 %files -f %{name}.lang
 %defattr(644,root,root,755)
 %doc *.gz docs/*.gz
-
-%attr(755,root,root) %{_bindir}/gftp
-
+%attr(755,root,root) %{_bindir}/*
 %dir %{_datadir}/gftp
 %{_datadir}/gftp/*.xpm
 %{_datadir}/gftp/COPYING
