@@ -11,9 +11,9 @@ Patch0:		gftp-pld.patch
 Patch1:		gftp-desktop.patch
 Patch2:		gftp-DESTDIR.patch
 URL:		http://www.newwave.net/~masneyb/
-BuildPrereq:	gtk+-devel
-BuildPrereq:	glib-devel
-BuildPrereq:	XFree86-devel
+BuildRequires:	gtk+-devel
+BuildRequires:	glib-devel
+BuildRequires:	XFree86-devel
 BuildRoot:	/tmp/%{name}-%{version}-root
 
 %define _prefix	/usr/X11R6
