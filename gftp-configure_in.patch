@@ -1,0 +1,21 @@
+diff -aurN gftp-2.0.15rc1.orig/configure.in gftp-2.0.15rc1/configure.in
+--- gftp-2.0.15rc1.orig/configure.in	2003-07-24 03:42:06.000000000 +0200
++++ gftp-2.0.15rc1/configure.in	2003-07-25 14:11:28.000000000 +0200
+@@ -38,7 +38,7 @@
+ AC_MINIX
+ AC_EXEEXT
+ AC_PROG_RANLIB
+-AC_SYS_LARGEFILE
++dnl AC_SYS_LARGEFILE
+ dnl AC_ISC_POSIX
+ AM_C_PROTOTYPES
+ AC_C_CONST
+@@ -56,7 +56,7 @@
+ AC_HEADER_SYS_WAIT
+ AC_CHECK_HEADERS(fcntl.h libutil.h limits.h malloc.h pty.h strings.h sys/ioctl.h sys/time.h unistd.h)
+ 
+-AC_TYPE_SOCKLEN_T
++dnl AC_TYPE_SOCKLEN_T
+ AC_TYPE_MODE_T
+ AC_TYPE_PID_T
+ AC_TYPE_SIZE_T
