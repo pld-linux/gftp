@@ -1,7 +1,9 @@
 Summary:	Multithreaded FTP client for X Window
+Summary(es):	Cliente FTP multithreaded para el X Windows
 Summary(pl):	Wielow±tkowy klient FTP dla X Window
+Summary(pt_BR):	Cliente FTP multithreaded para o X Window
 Name:		gftp
-Version:	2.0.9
+Version:	2.0.10
 Release:	1
 Epoch:		2
 License:	GPL
@@ -29,6 +31,9 @@ ftp proxy support, remote directory caching, passive and non-passive
 file transfers, drag-n-drop support, bookmarks menu, stop button, and
 many more features.
 
+%description -l es
+Cliente FTP multithreaded para el X Windows.
+
 %description -l pl
 gFTP jest wielow±tkowym klientem FTP dla X Window wykorzystuj±cym
 bibliotekê gtk+. Pozwala na jednoczesne ¶ci±ganie wielu plików,
@@ -36,6 +41,12 @@ wznawianie przerwanych transferów, kolejkowanie przesy³anych plików,
 ¶ci±ganie zawarto¶ci katalogów, mo¿liwo¶æ pracy z wykorzystaniem ftp
 proxy, ¶ci±gnie plików w trybie passiv i non-passive, drag-n-drop,
 zarz±dzanie po³±czeniami i wiele innych mo¿liwo¶ci.
+
+%description -l pt_BR
+O gftp é um cliente FTP multithreaded para o X Window escrito usando a
+biblioteca gtk. Permite transferir arquivos simultâneamente, continuar
+transferências interrompidas, filas para transferências de arquivos e
+um gerenciador de conexões muito bom e muitas outras características.
 
 %prep
 %setup -q
