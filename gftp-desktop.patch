@@ -1,6 +1,5 @@
-diff -aurN gftp-2.0.15rc1.orig/docs/gftp.desktop gftp-2.0.15rc1/docs/gftp.desktop
---- gftp-2.0.15rc1.orig/docs/gftp.desktop	2002-08-05 21:46:56.000000000 +0200
-+++ gftp-2.0.15rc1/docs/gftp.desktop	2003-07-25 14:23:56.000000000 +0200
+--- gftp-2.0.16.orig/docs/gftp.desktop	2002-08-05 21:46:56.000000000 +0200
++++ gftp-2.0.16/docs/gftp.desktop	2003-11-30 20:50:16.000000000 +0100
 @@ -1,4 +1,5 @@
  [Desktop Entry]
 +Encoding=UTF-8
@@ -21,16 +20,14 @@ diff -aurN gftp-2.0.15rc1.orig/docs/gftp.desktop gftp-2.0.15rc1/docs/gftp.deskto
 +Comment[ja]=ĽŢĽëĽÁĽšĽěĽĂĽÉFTPĽŻĽéĽ¤Ľ˘ĽóĽČ
 +Comment[ko]=´ŮÁßž˛ˇšľĺ FTP ÇÁˇÎą×ˇĽ
  Comment[nl]=Multithreaded ftp programma
- Comment[pl]=Wielozadaniowy klient FTP
+-Comment[pl]=Wielozadaniowy klient FTP
++Comment[pl]=Wielowątkowy klient FTP
  Comment[pt_BR]=Cliente FTP multi-tarefa
 -Comment[zh_TW.Big5]=�h�u��  ftp client
--Exec=gftp
 +Comment[zh_TW.Big5]=Śh˝uşü  ftp client
-+Exec=/usr/bin/gftp
+ Exec=gftp
  Icon=gftp.png
 -Terminal=0
--Type=Application
 +Terminal=false
-+Type=Application
-+Categories=Application;Network;
-+# vi: encoding=utf-8
+ Type=Application
++Categories=GTK;Network;FileTransfer;
