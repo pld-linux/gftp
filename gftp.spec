@@ -44,7 +44,7 @@ make
 %install
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT{%{_bindir},%{_datadir}/gftp} \
-	$RPM_BUILD_ROOT/etc/X11/applnk/Networking/FTP
+	$RPM_BUILD_ROOT/usr/X11R6/share/applnk/Networking/FTP
 
 make install DESTDIR=$RPM_BUILD_ROOT
 
@@ -62,4 +62,4 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/gftp/*.xpm
 %config %{_datadir}/gftp/gftprc
 
-/etc/X11/applnk/Networking/FTP/gftp.desktop
+/usr/X11R6/share/applnk/Networking/FTP/gftp.desktop
