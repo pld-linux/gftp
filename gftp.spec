@@ -57,7 +57,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %attr(755,root,root) /usr/X11R6/bin/gftp
 /usr/X11R6/share/gnome/apps/Internet/gftp.desktop
-/usr/X11R6/share/gftp/*
+/usr/X11R6/share/gftp
 
 %config(missingok) /etc/X11/wmconfig/gftp
 
