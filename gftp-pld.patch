@@ -1,11 +1,10 @@
-diff -urN gftp-1.12.orig/sample.gftp/gftprc gftp-1.12/sample.gftp/gftprc
---- gftp-1.12.orig/sample.gftp/gftprc	Tue Feb 16 18:42:19 1999
-+++ gftp-1.12/sample.gftp/gftprc	Mon Mar 29 21:35:05 1999
-@@ -87,6 +87,7 @@
- # If you set the firewall argument to 1, gFTP will try to connect to your
- # FTP proxy if you have one. It is usually best to leave this set at 1 because
- # gFTP won't use it if you don't have a FTP proxy
+--- sample.gftp/gftprc~	Sat May 15 19:56:01 1999
++++ sample.gftp/gftprc	Sun May 16 15:25:05 1999
+@@ -121,6 +121,7 @@
+ host=General Sites/TSX-11:tsx-11.mit.edu:21:/pub/linux:anonymous:@EMAIL@:1
+ host=RedHat Sites/FalseHope RPMs:ftp.falsehope.com:21:/pub:anonymous:@EMAIL@:1
+ host=RedHat Sites/Freshmeat RPMs:ftp.freshmeat.net:21:/pub/rpms:anonymous:@EMAIL@:1
 +host=PLD Sites:PLD:ftp.pld.org.pl:21:/:anonymous:@EMAIL@:1
- host=Debian Sites:Debian:ftp.debian.org:21:/debian:anonymous:@EMAIL@:1
- host=Debian Sites:Freshmeat DEBs:ftp.freshmeat.net:21:/pub/debs:anonymous:@EMAIL@:1
- host=General Sites:GNU Archive:prep.ai.mit.edu:21:/pub/gnu:anonymous:@EMAIL@:1
+ host=RedHat Sites/RedHat Contrib:contrib.redhat.com:21:/pub:anonymous:@EMAIL@:1
+ host=RedHat Sites/RedHat:ftp.redhat.com:21:/pub:anonymous:@EMAIL@:1
+ host=RedHat Sites/RPM.org:ftp.rpm.org:21:/pub:anonymous:@EMAIL@:1
