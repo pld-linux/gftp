@@ -35,7 +35,7 @@ zarz±dcê po³±czeñ i wiele innych mo¿liwo¶ci.
 
 %build
 CFLAGS="$RPM_OPT_FLAGS" LDFLAGS="-s" \
-./configure %{_target} \
+./configure %{_target_platform} \
 	--prefix=%{_prefix} \
 	--with-x
 
