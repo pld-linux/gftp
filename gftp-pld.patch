@@ -1,10 +1,10 @@
---- sample.gftp/gftprc~	Sat May 15 19:56:01 1999
-+++ sample.gftp/gftprc	Sun May 16 15:25:05 1999
-@@ -121,6 +121,7 @@
+--- sample.gftp/gftprc~	Fri Jun 25 21:46:20 1999
++++ sample.gftp/gftprc	Sat Jun 26 15:13:54 1999
+@@ -141,6 +141,7 @@
+ host=General Sites/Tux.Org:ftp.tux.org:21:/pub:anonymous:@EMAIL@:1
  host=General Sites/TSX-11:tsx-11.mit.edu:21:/pub/linux:anonymous:@EMAIL@:1
+ host=General Sites/Wcarchive:ftp.cdrom.com:21:/:anonymous:@EMAIL@:1
++host=PLD Sites/PLD:ftp.pld.org.pl:21:/stable:anonymous:@EMAIL@:1
  host=RedHat Sites/FalseHope RPMs:ftp.falsehope.com:21:/pub:anonymous:@EMAIL@:1
  host=RedHat Sites/Freshmeat RPMs:ftp.freshmeat.net:21:/pub/rpms:anonymous:@EMAIL@:1
-+host=PLD Sites:PLD:ftp.pld.org.pl:21:/:anonymous:@EMAIL@:1
- host=RedHat Sites/RedHat Contrib:contrib.redhat.com:21:/pub:anonymous:@EMAIL@:1
- host=RedHat Sites/RedHat:ftp.redhat.com:21:/pub:anonymous:@EMAIL@:1
- host=RedHat Sites/RPM.org:ftp.rpm.org:21:/pub:anonymous:@EMAIL@:1
+ host=RedHat Sites/RH Contrib:contrib.redhat.com:21:/pub:anonymous:@EMAIL@:1
