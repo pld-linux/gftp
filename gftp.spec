@@ -37,9 +37,8 @@ zarz±dcê po³±czeñ i wiele innych mo¿liwo¶ci.
 %patch2 -p0
 
 %build
-CFLAGS="$RPM_OPT_FLAGS" LDFLAGS="-s" \
-./configure %{_target_platform} \
-	--prefix=%{_prefix} 
+LDFLAGS="-s"; export LDFLAGS
+%configure
 make 
 
 %install
