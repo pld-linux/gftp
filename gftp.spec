@@ -3,7 +3,7 @@ Summary(es):	Cliente FTP multithreaded para el X Windows
 Summary(pl):	Wielow±tkowy klient FTP dla X Window
 Summary(pt_BR):	Cliente FTP multithreaded para o X Window
 Name:		gftp
-Version:	2.0.10
+Version:	2.0.11
 Release:	1
 Epoch:		2
 License:	GPL
