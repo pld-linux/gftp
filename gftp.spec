@@ -38,7 +38,7 @@ make OPTFLAGS="$RPM_OPT_FLAGS -Wall" \
 	PREFIX="/usr/X11R6"
 
 %install
-rm -rf $RPM_BUILD_ROOT
+rm -r $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT/usr/X11R6/{bin,share/{gftp,gnome/apps/Internet}} \
 	$RPM_BUILD_ROOT/etc/X11/wmconfig
 
@@ -50,7 +50,7 @@ install %{SOURCE2} $RPM_BUILD_ROOT/etc/X11/wmconfig/gftp
 gzip -9nf README TODO CHANGELOG
 
 %clean
-rm -r $RPM_BUILD_ROOT
+rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
