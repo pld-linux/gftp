@@ -1,24 +1,22 @@
-diff -aurN gftp-2.0.17.orig/configure gftp-2.0.17/configure
---- gftp-2.0.17.orig/configure	2004-03-29 02:00:22.000000000 +0200
-+++ gftp-2.0.17/configure	2004-10-23 20:37:28.320757768 +0200
-@@ -973,7 +973,7 @@
+--- gftp-2.0.18_old/configure	2005-02-12 22:38:26.025162488 +0100
++++ gftp-2.0.18/configure	2005-02-12 23:07:26.353592352 +0100
+@@ -1767,7 +1767,7 @@
  
  
  
--ALL_LINGUAS="am az ar be bg bn ca cs da de el es fi fr ga hr hu it ja ko mk ml ms nl no pl pt pt_BR ro ru sk sr sr@Latn sv ta th tr uk zh_CN zh_TW"
-+ALL_LINGUAS="am az ar be bg bn ca cs da de el es fi fr ga hr hu it ja ko mk ml ms nb nl pl pt pt_BR ro ru sk sr sr@Latn sv ta th tr uk zh_CN zh_TW"
- 
+-ALL_LINGUAS="am az ar be bg bn ca cs da de el en_CA en_GB es fi fr ga hr hu it ja ko mk ml ms nl no pa pl pt pt_BR ro ru sk sq sr sr@Latn sv ta th tr uk zh_CN zh_TW"
++ALL_LINGUAS="am az ar be bg bn ca cs da de el en_CA en_GB es fi fr ga hr hu it ja ko mk ml ms nb nl pa pl pt pt_BR ro ru sk sq sr sr@Latn sv ta th tr uk zh_CN zh_TW"
  
  # Make sure we can run config.sub.
-diff -aurN gftp-2.0.17.orig/configure.in gftp-2.0.17/configure.in
---- gftp-2.0.17.orig/configure.in	2004-03-29 02:00:10.000000000 +0200
-+++ gftp-2.0.17/configure.in	2004-10-23 20:37:07.099983816 +0200
+ $ac_config_sub sun4 >/dev/null 2>&1 ||
+--- gftp-2.0.18_old/configure.in	2005-02-12 22:38:26.029161880 +0100
++++ gftp-2.0.18/configure.in	2005-02-12 23:07:47.068443216 +0100
 @@ -28,7 +28,7 @@
  AC_SUBST(VERSION)
  AC_SUBST(PREFIX)
  
--ALL_LINGUAS="am az ar be bg bn ca cs da de el es fi fr ga hr hu it ja ko mk ml ms nl no pl pt pt_BR ro ru sk sr sr@Latn sv ta th tr uk zh_CN zh_TW"
-+ALL_LINGUAS="am az ar be bg bn ca cs da de el es fi fr ga hr hu it ja ko mk ml ms nb nl pl pt pt_BR ro ru sk sr sr@Latn sv ta th tr uk zh_CN zh_TW"
+-ALL_LINGUAS="am az ar be bg bn ca cs da de el en_CA en_GB es fi fr ga hr hu it ja ko mk ml ms nl no pa pl pt pt_BR ro ru sk sq sr sr@Latn sv ta th tr uk zh_CN zh_TW"
++ALL_LINGUAS="am az ar be bg bn ca cs da de el en_CA en_GB es fi fr ga hr hu it ja ko mk ml ms nb nl pa pl pt pt_BR ro ru sk sq sr sr@Latn sv ta th tr uk zh_CN zh_TW"
  
  AC_CANONICAL_HOST
  AC_PROG_CC

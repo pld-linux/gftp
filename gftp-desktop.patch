@@ -1,38 +1,39 @@
---- gftp-2.0.16.orig/docs/gftp.desktop	2002-08-05 21:46:56.000000000 +0200
-+++ gftp-2.0.16/docs/gftp.desktop	2003-11-30 20:50:16.000000000 +0100
-@@ -1,4 +1,5 @@
+--- gftp-2.0.18/docs/gftp.desktop	2004-11-03 23:11:57.000000000 +0100
++++ gftp-2.0.17/docs/gftp.desktop	2002-08-05 21:46:56.000000000 +0200
+@@ -1,12 +1,29 @@
  [Desktop Entry]
-+Encoding=UTF-8
+-Version=1.0
+-Encoding=UTF-8
  Name=gFTP
- Name[br]=gFTP
- Name[da]=gFTP
-@@ -10,20 +11,22 @@
- Name[nl]=gFTP
- Name[pl]=gFTP
- Name[pt_BR]=gFTP
--Name[zh_TW.Big5]=gFTP
-+Name[zh_TW]=gFTP
- Comment=Multithreaded ftp client
- Comment[br]=Cliente de ftp multithreaded
--Comment[da]=FlertrÂdet ftpklient
-+Comment[da]=Flertr√•det ftpklient
- Comment[de]=Multithreaded FTP Programm
- Comment[es]=Cliente FTP multihilo
- Comment[fr]=Client ftp multithread 
--Comment[ja]=•ﬁ•Î•¡•π•Ï•√•…FTP•Ø•È•§•¢•Û•»
--Comment[ko]=¥Ÿ¡ﬂæ≤∑πµÂ FTP «¡∑Œ±◊∑•
-+Comment[ja]=„Éû„É´„ÉÅ„Çπ„É¨„ÉÉ„ÉâFTP„ÇØ„É©„Ç§„Ç¢„É≥„Éà
-+Comment[ko]=Îã§Ï§ëÏì∞Î†àÎìú FTP ÌîÑÎ°úÍ∑∏Îû®
- Comment[nl]=Multithreaded ftp programma
--Comment[pl]=Wielozadaniowy klient FTP
-+Comment[pl]=WielowƒÖtkowy klient FTP
- Comment[pt_BR]=Cliente FTP multi-tarefa
--Comment[zh_TW.Big5]=¶hΩu∫¸  ftp client
-+Comment[zh_TW]=Â§öÁ∑öÁ∑í  ftp client
- Exec=gftp
+-GenericName=gFTP
+-Comment=Download and upload files using multiple file transfer protocols
+-Exec=gftp %u
+-TryExec=gftp
++Name[br]=gFTP
++Name[da]=gFTP
++Name[de]=gFTP
++Name[es]=gFTP
++Name[fr]=gFTP
++Name[ja]=gFTP
++Name[ko]=gFTP
++Name[nl]=gFTP
++Name[pl]=gFTP
++Name[pt_BR]=gFTP
++Name[zh_TW.Big5]=gFTP
++Comment=Multithreaded ftp client
++Comment[br]=Cliente de ftp multithreaded
++Comment[da]=FlertrÂdet ftpklient
++Comment[de]=Multithreaded FTP Programm
++Comment[es]=Cliente FTP multihilo
++Comment[fr]=Client ftp multithread 
++Comment[ja]=•ﬁ•Î•¡•π•Ï•√•…FTP•Ø•È•§•¢•Û•»
++Comment[ko]=¥Ÿ¡ﬂæ≤∑πµÂ FTP «¡∑Œ±◊∑•
++Comment[nl]=Multithreaded ftp programma
++Comment[pl]=Wielozadaniowy klient FTP
++Comment[pt_BR]=Cliente FTP multi-tarefa
++Comment[zh_TW.Big5]=¶hΩu∫¸  ftp client
++Exec=gftp
  Icon=gftp.png
--Terminal=0
-+Terminal=false
+ Terminal=0
  Type=Application
-+Categories=GTK;Network;FileTransfer;
-+# vi: encoding=utf-8
+-Categories=Application;GTK;GNOME;Network;FileTransfer;
