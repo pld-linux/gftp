@@ -1,4 +1,5 @@
-%define		_rc rc1
+#TODO
+# - PLD Bookmarks
 Summary:	Multithreaded FTP client for X Window
 Summary(es):	Cliente FTP multithreaded para el X Window
 Summary(ja):	X Window System мя╔ч╔К╔а╔╧╔Л╔ц╔и FTP ╔╞╔И╔╓╔╒╔С╔х
@@ -8,12 +9,12 @@ Summary(ru):	Многонитевый FTP клиент для X Window
 Summary(uk):	Багатонитковий FTP кл╕╓нт для X Window
 Name:		gftp
 Version:	2.0.15
-Release:	0.%{_rc}.1
+Release:	1
 Epoch:		2
 License:	GPL
 Group:		X11/Applications/Networking
-Source0:	http://gftp.seul.org/%{name}-%{version}%{_rc}.tar.gz
-# Source0-md5:	fbc470390df06a61f554c2df88951c13
+Source0:	http://gftp.seul.org/%{name}-%{version}.tar.gz
+# Source0-md5:	5a076c251c1d81cace49ebe197c0d70a
 Patch0:		%{name}-pld.patch
 Patch1:		%{name}-no_libnsl.patch
 Patch2:		%{name}-configure_in.patch
@@ -80,7 +81,7 @@ gFTP ╓ багатонитковим FTP кл╕╓нтом для X Window, написаним з
 закладинок, кнопка зупинки та багато ╕ншого.
 
 %prep
-%setup -q -n %{name}-%{version}%{_rc}
+%setup -q -n %{name}-%{version}
 %patch0 -p1
 %patch1 -p1
 %patch2 -p1
