@@ -1,18 +1,18 @@
 Summary:	Multithreaded FTP client for X Window
 Summary(pl):	Wielow±tkowy klient FTP dla X Window
 Name:		gftp
-Version:	1.13	
-Release:	2
+Version:	2.0.0	
+Release:	1
 Group:		X11/Applications/Networking
 Group(pl):	X11/Aplikacje/Sieciowe
 Copyright:	GPL
 Source0:	http://www.newwave.net/~masneyb/%{name}-%{version}.tar.gz
 Source1:	gftp.desktop
 Source2:	gftp.wmconfig
-Patch0:		gftp-DESTDIR.patch
-Patch1:		gftp-pld.patch
+Patch:		gftp-pld.patch
 URL:		http://www.newwave.net/~masneyb/
 BuildPrereq:	gtk+-devel
+BuildPrereq:	glib-devel
 BuildPrereq:	XFree86-devel
 Buildroot:      /tmp/%{name}-%{version}-root
 
@@ -29,9 +29,8 @@ transferów, kolejkowanie przesy³anych plików, posiada bardzo przyjemnego
 zarz±dcê po³±czeñ i wiele innych mo¿liwo¶ci.
 
 %prep
-%setup  -q
-%patch0 -p1
-%patch1 -p1
+%setup -q
+%patch -p0
 
 %build
 CFLAGS="$RPM_OPT_FLAGS" LDFLAGS="-s" \
@@ -43,12 +42,12 @@ make
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT/usr/X11R6/{bin,share/{gftp,gnome/apps/Internet}} \
-	$RPM_BUILD_ROOT/etc/X11/wmconfig
+install -d $RPM_BUILD_ROOT/usr/X11R6/{bin,share/gftp} \
+	$RPM_BUILD_ROOT/etc/X11/{wmconfig,applnk/Networking}
 
-make install DESTDIR="$RPM_BUILD_ROOT"
+make install PREFIX=$RPM_BUILD_ROOT/usr/X11R6
 
-install %{SOURCE1} $RPM_BUILD_ROOT/usr/X11R6/share/gnome/apps/Internet
+install %{SOURCE1} $RPM_BUILD_ROOT/etc/X11/applnk/Networking
 install %{SOURCE2} $RPM_BUILD_ROOT/etc/X11/wmconfig/gftp
 
 gzip -9nf README TODO CHANGELOG eplf.txt
@@ -59,16 +58,23 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc {README,TODO,CHANGELOG,eplf.txt}.gz
-
 %attr(755,root,root) /usr/X11R6/bin/gftp
-/usr/X11R6/share/gnome/apps/Internet/gftp.desktop
 %dir /usr/X11R6/share/gftp
-/usr/X11R6/share/gftp/gftprc
 /usr/X11R6/share/gftp/*.xpm
+%config /usr/X11R6/share/gftp/gftprc
 
 /etc/X11/wmconfig/gftp
+/etc/X11/applnk/Networking/gftp.desktop
 
 %changelog
+* Sun May 16 1999 Piotr Czerwiñski <pius@pld.org.pl>
+  [2.0.0-1]
+- updated to 2.0.0,
+- removed gftp-DESTDIR.patch,
+- changed gftp.desktop path,
+- more BuildPrereq rules,
+- package is FHS 2.0 compliant.
+
 * Mon Apr 19 1999 Piotr Czerwiñski <pius@pld.org.pl>
   [1.13-2]
 - recompiled on new rpm.
