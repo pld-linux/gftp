@@ -6,14 +6,13 @@ Summary(pt_BR):	Cliente FTP multithreaded para o X Window
 Summary(ru):	Многонитевый FTP клиент для X Window
 Summary(uk):	Багатонитковий FTP кл╕╓нт для X Window
 Name:		gftp
-Version:	2.0.17
+Version:	2.0.18
 Release:	1
 Epoch:		2
 License:	GPL
 Group:		X11/Applications/Networking
 Source0:	http://gftp.seul.org/%{name}-%{version}.tar.gz
-# Source0-md5:	6fa2daeae99b481410de3009e2ce4e19
-# Source0-size:	1931750
+# Source0-md5:	4d449f79b225b0831692e9caa39a2028
 Patch0:		%{name}-pld.patch
 Patch1:		%{name}-no_libnsl.patch
 Patch2:		%{name}-configure_in.patch
