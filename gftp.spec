@@ -1,3 +1,4 @@
+%define		_rc rc1
 Summary:	Multithreaded FTP client for X Window
 Summary(es):	Cliente FTP multithreaded para el X Windows
 Summary(ja):	X Window System мя╔ч╔К╔а╔╧╔Л╔ц╔и FTP ╔╞╔И╔╓╔╒╔С╔х
@@ -6,18 +7,19 @@ Summary(pt_BR):	Cliente FTP multithreaded para o X Window
 Summary(ru):	Многонитевый FTP клиент для X Window
 Summary(uk):	Багатонитковий FTP кл╕╓нт для X Window
 Name:		gftp
-Version:	2.0.14
-Release:	1
+Version:	2.0.15
+Release:	0.%{_rc}.1
 Epoch:		2
 License:	GPL
 Group:		X11/Applications/Networking
-Source0:	http://gftp.seul.org/%{name}-%{version}.tar.gz
-# Source0-md5:	61e1271af88de20b50a90242a648ab2b
+Source0:	http://gftp.seul.org/%{name}-%{version}%{_rc}.tar.gz
+# Source0-md5:	fbc470390df06a61f554c2df88951c13
 Patch0:		%{name}-pld.patch
 Patch1:		%{name}-no_libnsl.patch
-Patch2:		%{name}-am_fixes.patch
+Patch2:		%{name}-configure_in.patch
+Patch3:		%{name}-desktop.patch
 URL:		http://gftp.seul.org/
-BuildRequires:	gtk+-devel >= 1.2.3
+BuildRequires:	gtk+2-devel
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	gettext-devel
@@ -77,16 +79,17 @@ gFTP ╓ багатонитковим FTP кл╕╓нтом для X Window, написаним з
 закладинок, кнопка зупинки та багато ╕ншого.
 
 %prep
-%setup -q
+%setup -q -n %{name}-%{version}%{_rc}
 %patch0 -p1
 %patch1 -p1
 %patch2 -p1
+%patch3 -p1
 
 %build
-rm -f missing
-%{__gettextize}
+rm -f missing aclocal.m4 acinclude.m4
 %{__aclocal}
-%{__autoconf}
+%{__autoheader}                                                                 
+%{__autoconf}                                                                   
 %{__automake}
 %configure \
 	--disable-textport
@@ -102,7 +105,7 @@ rm -rf $RPM_BUILD_ROOT
 
 mv -f $RPM_BUILD_ROOT%{_bindir}/gftp{-gtk,}
 
-%find_lang %{name}
+%find_lang %{name} --all-name
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -112,12 +115,10 @@ rm -rf $RPM_BUILD_ROOT
 %doc README TODO THANKS docs/USERS-GUIDE ChangeLog
 %attr(755,root,root) %{_bindir}/*
 %dir %{_datadir}/gftp
-%{_datadir}/gftp/*.xpm
 %{_datadir}/gftp/COPYING
+%{_datadir}/gftp/*.xpm
 %config %{_datadir}/gftp/gftprc
 %config %{_datadir}/gftp/bookmarks
-
-%{_pixmapsdir}/gftp.png
-%{_mandir}/man1/*
-
 %{_applnkdir}/Network/FTP/gftp.desktop
+%{_mandir}/man1/*
+%{_pixmapsdir}/gftp.png
