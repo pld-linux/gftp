@@ -1,0 +1,36 @@
+--- gftp-2.0.16/lib/misc.c.orig	2004-01-15 17:01:33.000000000 +0100
++++ gftp-2.0.16/lib/misc.c	2004-01-15 17:03:26.000000000 +0100
+@@ -30,17 +30,17 @@
+   if (dest_str != NULL)
+     {
+ #if defined (_LARGEFILE_SOURCE)
+-      g_snprintf (dest_str, dest_len, "%'lld", number);
++      g_snprintf (dest_str, dest_len, "%'lld", (long long) number);
+ #else
+-      g_snprintf (dest_str, dest_len, "%'ld", number);
++      g_snprintf (dest_str, dest_len, "%'ld", (long) number);
+ #endif
+     }
+   else
+     {
+ #if defined (_LARGEFILE_SOURCE)
+-      dest_str = g_strdup_printf ("%'lld", number);
++      dest_str = g_strdup_printf ("%'lld", (long long) number);
+ #else
+-      dest_str = g_strdup_printf ("%'ld", number);
++      dest_str = g_strdup_printf ("%'ld", (long) number);
+ #endif
+     }
+ 
+@@ -56,9 +56,9 @@
+   int len, num, rem, i;
+ 
+ #if defined (_LARGEFILE_SOURCE)
+-  g_snprintf (src, sizeof (src), "%lld", number);
++  g_snprintf (src, sizeof (src), "%lld", (long long) number);
+ #else
+-  g_snprintf (src, sizeof (src), "%ld", number);
++  g_snprintf (src, sizeof (src), "%ld", (long) number);
+ #endif
+ 
+   if (dest_str != NULL)
