@@ -69,7 +69,7 @@ rm -rf $RPM_BUILD_ROOT
 %config %{_datadir}/gftp/gftprc
 %config %{_datadir}/gftp/bookmarks
 
-%{_datadir}/pixmaps/gftp.png
+%{_pixmapsdir}/gftp.png
 %{_mandir}/man1/*
 
 %{_applnkdir}/Network/FTP/gftp.desktop
