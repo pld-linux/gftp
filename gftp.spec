@@ -19,10 +19,11 @@ Patch1:		%{name}-no_libnsl.patch
 Patch2:		%{name}-configure_in.patch
 Patch3:		%{name}-desktop.patch
 URL:		http://gftp.seul.org/
-BuildRequires:	gtk+2-devel
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	gettext-devel
+BuildRequires:	gtk+2-devel >= 2.0.0
+BuildRequires:	openssl-devel >= 0.9.7
 BuildRequires:	pkgconfig
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
