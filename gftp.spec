@@ -34,7 +34,7 @@ zarz±dcê po³±czeñ i wiele innych mo¿liwo¶ci.
 %patch1 -p1
 
 %build
-CFLAGS="$RPM_OPT_FLAGS" \
+CFLAGS="$RPM_OPT_FLAGS" LDFLAGS="-s" \
 ./configure \
 	--prefix=/usr/X11R6 \
 	--with-x
