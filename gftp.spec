@@ -13,7 +13,7 @@ URL:		http://www.newwave.net/~masneyb/
 BuildPrereq:	gtk+-devel
 BuildPrereq:	glib-devel
 BuildPrereq:	XFree86-devel
-Buildroot:      /tmp/%{name}-%{version}-root
+BuildRoot:	/tmp/%{name}-%{version}-root
 
 %define _prefix	/usr/X11R6
 
