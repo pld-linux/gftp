@@ -63,14 +63,3 @@ rm -rf $RPM_BUILD_ROOT
 %config %{_datadir}/gftp/gftprc
 
 /etc/X11/applnk/Networking/FTP/gftp.desktop
-
-%changelog
-* Sat Jun 26 1999 Piotr Czerwiñski <pius@pld.org.pl> 
-  [2.0.2-1]
-- updated to 2.0.2.
-
-* Fri May 21 1999 Piotr Czerwiñski <pius@pld.org.pl> 
-  [2.0.1-1]
-- package is FHS 2.0 compliant,
-- spec file rewritten for PLD use,
-- based on spec written by Michael Fulbright <drmike@redhat.com>.
