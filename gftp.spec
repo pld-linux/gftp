@@ -99,7 +99,7 @@ rm -rf $RPM_BUILD_ROOT
 	Utilitiesdir=%{_applnkdir}/Network/FTP \
 	Iconsdir=%{_pixmapsdir}
 
-mv -f $RPM_BUILD_ROOT%{_bindir}/{gftp{-gtk,}
+mv -f $RPM_BUILD_ROOT%{_bindir}/gftp{-gtk,}
 
 %find_lang %{name}
 
