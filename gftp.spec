@@ -35,7 +35,7 @@ zarz±dcê po³±czeñ i wiele innych mo¿liwo¶ci.
 
 %build
 CFLAGS="$RPM_OPT_FLAGS" LDFLAGS="-s" \
-./configure \
+./configure %{_target} \
 	--prefix=/usr/X11R6 \
 	--with-x
 
