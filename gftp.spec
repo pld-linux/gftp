@@ -1,8 +1,8 @@
 Summary:	Multithreaded FTP client for X Window
 Summary(pl):	Wielow±tkowy klient FTP dla X Window
 Name:		gftp
-Version:	2.0.6a
-Release:	5
+Version:	2.0.7
+Release:	1
 Group:		X11/Applications/Networking
 Group(pl):	X11/Aplikacje/Sieciowe
 License:	GPL
