@@ -19,16 +19,19 @@ BuildRoot:	/tmp/%{name}-%{version}-root
 %define 	_prefix		/usr/X11R6
 
 %description
-gFTP is a multithreaded FTP client for X Window written using Gtk. It
-allows to have simultaneous downloads, resuming of interrupted file
-transfers, file transfer queues, a very nice connection manager and
-many more features.
+gFTP is a multithreaded FTP client for X Windows written using Gtk. It
+features simultaneous downloads, resuming of interrupted file transfers,
+file transfer queues, downloading of entire directories, ftp proxy support,
+remote directory caching, passive and non-passive file transfers,
+drag-n-drop support, bookmarks menu, stop button, and many more features.
 
 %description -l pl
-gFTP jest wielow±tkowym klientem FTP dla X Window, napisanym przy u¿yciu Gtk.
-Pozwala na jednoczesne ¶ci±ganie wielu plików, wznawianie przerwanych 
-transferów, kolejkowanie przesy³anych plików, posiada bardzo przyjemnego 
-zarz±dcê po³±czeñ i wiele innych mo¿liwo¶ci.
+gFTP jest wielow±tkowym klientem FTP dla X Window wykorzystuj±c bibliotekê
+gtk+. Pozwala na jednoczesne ¶ci±ganie wielu plików, wznawianie przerwanych
+transferów, kolejkowanie przesy³anych plików, ¶ci±ganie zawarto¶ci
+katalogów, mo¿liwo¶æ pracy z wykorzystaniem ftp proxy, ¶ci±gnie plików w
+trybie passiv i non-passive, drag-n-drop, tak¿e posiada bardzo przyjemnego
+zarz±dzanie po³±czeniami i wiele innych mo¿liwo¶ci.
 
 %prep
 %setup -q
