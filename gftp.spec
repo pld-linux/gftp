@@ -11,8 +11,6 @@ Patch0:		gftp-pld.patch
 Patch1:		gftp-applnkdir.patch
 URL:		http://gftp.seul.org/
 BuildRequires:	gtk+-devel >= 1.2.3
-BuildRequires:	glib-devel >= 1.2.3
-BuildRequires:	XFree86-devel
 BuildRequires:	gettext-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
