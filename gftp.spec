@@ -1,14 +1,15 @@
 Summary:	Multithreaded FTP client for X Window
 Summary(pl):	Wielow±tkowy klient FTP dla X Window
 Name:		gftp
-Version:	2.0.1
+Version:	2.0.2
 Release:	1
 Group:		X11/Applications/Networking
 Group(pl):	X11/Aplikacje/Sieciowe
 Copyright:	GPL
 Source0:	http://www.newwave.net/~masneyb/%{name}-%{version}.tar.gz
-Source1:	gftp.desktop
-Patch:		gftp-pld.patch
+Patch0:		gftp-pld.patch
+Patch1:		gftp-desktop.patch
+Patch2:		gftp-DESTDIR.patch
 URL:		http://www.newwave.net/~masneyb/
 BuildPrereq:	gtk+-devel
 BuildPrereq:	glib-devel
@@ -31,14 +32,14 @@ zarz±dcê po³±czeñ i wiele innych mo¿liwo¶ci.
 
 %prep
 %setup -q
-%patch -p0
+%patch0 -p0
+%patch1 -p0
+%patch2 -p0
 
 %build
 CFLAGS="$RPM_OPT_FLAGS" LDFLAGS="-s" \
 ./configure %{_target_platform} \
-	--prefix=%{_prefix} \
-	--with-x
-
+	--prefix=%{_prefix} 
 make 
 
 %install
@@ -46,9 +47,7 @@ rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT{%{_bindir},%{_datadir}/gftp} \
 	$RPM_BUILD_ROOT/etc/X11/applnk/Networking/FTP
 
-make install PREFIX=$RPM_BUILD_ROOT%{_prefix}
-
-install %{SOURCE1} $RPM_BUILD_ROOT/etc/X11/applnk/Networking/FTP
+make install DESTDIR=$RPM_BUILD_ROOT
 
 gzip -9nf README TODO CHANGELOG eplf.txt
 
@@ -67,6 +66,10 @@ rm -rf $RPM_BUILD_ROOT
 /etc/X11/applnk/Networking/FTP/gftp.desktop
 
 %changelog
+* Sat Jun 26 1999 Piotr Czerwiñski <pius@pld.org.pl> 
+  [2.0.2-1]
+- updated to 2.0.2.
+
 * Fri May 21 1999 Piotr Czerwiñski <pius@pld.org.pl> 
   [2.0.1-1]
 - package is FHS 2.0 compliant,
