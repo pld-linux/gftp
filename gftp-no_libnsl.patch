@@ -1,0 +1,13 @@
+--- gftp-2.0.9/configure.in~	Sat Nov 24 05:58:59 2001
++++ gftp-2.0.9/configure.in	Sat Nov 24 05:58:59 2001
+@@ -57,7 +57,9 @@
+ if test "x$enable_textport" = "x1" ; then
+   AC_CHECK_LIB(socket, socket, EXTRA_LIBS="-lsocket")
+   
+-  AC_CHECK_LIB(nsl, gethostbyname, EXTRA_LIBS="$EXTRA_LIBS -lnsl")
++  AC_CHECK_FUNC(gethostbyname, [],
++    AC_CHECK_LIB(nsl, gethostbyname, EXTRA_LIBS="$EXTRA_LIBS -lnsl")
++  )
+ 
+   AC_CHECK_FUNC(gethostbyname, [],
+     AC_CHECK_LIB(nsl, gethostbyname, EXTRA_LIBS="$EXTRA_LIBS -lnsl")
