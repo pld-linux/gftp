@@ -38,6 +38,7 @@ make OPTFLAGS="$RPM_OPT_FLAGS -Wall" \
 	PREFIX="/usr/X11R6"
 
 %install
+rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT/usr/X11R6/{bin,share/{gftp,gnome/apps/Internet}} \
 	$RPM_BUILD_ROOT/etc/X11/wmconfig
 
