@@ -2,13 +2,12 @@ Summary:	Multithreaded FTP client for X Window
 Summary(pl):	Wielow±tkowy klient FTP dla X Window
 Name:		gftp
 Version:	2.0.6a
-Release:	1
+Release:	2
 Group:		X11/Applications/Networking
 Group(pl):	X11/Aplikacje/Sieciowe
 License:	GPL
 Source0:	http://gftp.seul.org/%{name}-%{version}.tar.gz
 Patch0:		gftp-pld.patch
-Patch1:		gftp-applnkdir.patch
 URL:		http://gftp.seul.org/
 BuildRequires:	gtk+-devel >= 1.2.3
 BuildRequires:	gettext-devel
@@ -46,10 +45,12 @@ make
 %install
 rm -rf $RPM_BUILD_ROOT
 
-make install DESTDIR=$RPM_BUILD_ROOT
+make install \
+	DESTDIR=$RPM_BUILD_ROOT \
+	Utilitiesdir=%{_applnkdir}/Network/FTP
 
 gzip -9nf $RPM_BUILD_ROOT%{_mandir}/man1/* \
-README TODO THANKS USERS-GUIDE ChangeLog eplf.txt
+	README TODO THANKS USERS-GUIDE ChangeLog eplf.txt
 
 %find_lang %{name}
 
@@ -71,4 +72,4 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/pixmaps/gftp.png
 %{_mandir}/man1/*
 
-%{_applnkdir}/Internet/gftp.desktop
+%{_applnkdir}/Network/FTP/gftp.desktop
