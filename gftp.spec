@@ -33,12 +33,11 @@ zarz±dcê po³±czeñ i wiele innych mo¿liwo¶ci.
 %patch1 -p1
 
 %build
-
 make OPTFLAGS="$RPM_OPT_FLAGS -Wall" \
 	PREFIX="/usr/X11R6"
 
 %install
-rm -r $RPM_BUILD_ROOT
+rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT/usr/X11R6/{bin,share/{gftp,gnome/apps/Internet}} \
 	$RPM_BUILD_ROOT/etc/X11/wmconfig
 
