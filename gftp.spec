@@ -11,7 +11,7 @@ Release:	2
 Epoch:		2
 License:	GPL
 Group:		X11/Applications/Networking
-Source0:	ftp://www.gftp.org/pub/gftp%{name}-%{version}.tar.gz
+Source0:	ftp://www.gftp.org/pub/gftp/old-releases/%{name}-%{version}.tar.gz
 # Source0-md5:	61e1271af88de20b50a90242a648ab2b
 Patch0:		%{name}-pld.patch
 Patch1:		%{name}-no_libnsl.patch
