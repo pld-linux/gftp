@@ -6,7 +6,7 @@ Summary(pt_BR):	Cliente FTP multithreaded para o X Window
 Summary(ru):	Многонитевый FTP клиент для X Window
 Summary(uk):	Багатонитковий FTP кл╕╓нт для X Window
 Name:		gftp
-Version:	2.0.13
+Version:	2.0.14
 Release:	1
 Epoch:		2
 License:	GPL
@@ -14,13 +14,14 @@ Group:		X11/Applications/Networking
 Source0:	http://gftp.seul.org/%{name}-%{version}.tar.gz
 Patch0:		%{name}-pld.patch
 Patch1:		%{name}-no_libnsl.patch
+Patch2:		%{name}-am_fixes.patch
 URL:		http://gftp.seul.org/
 BuildRequires:	gtk+-devel >= 1.2.3
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	gettext-devel
+BuildRequires:	pkgconfig
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
-
 
 %description
 gFTP is a multithreaded FTP client for X Windows written using Gtk. It
@@ -78,6 +79,7 @@ gFTP ╓ багатонитковим FTP кл╕╓нтом для X Window, написаним з
 %setup -q
 %patch0 -p1
 %patch1 -p1
+%patch2 -p1
 
 %build
 rm -f missing
@@ -85,7 +87,8 @@ rm -f missing
 %{__aclocal}
 %{__autoconf}
 %{__automake}
-%configure
+%configure \
+	--disable-textport
 %{__make}
 
 %install
@@ -93,7 +96,10 @@ rm -rf $RPM_BUILD_ROOT
 
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT \
-	Utilitiesdir=%{_applnkdir}/Network/FTP
+	Utilitiesdir=%{_applnkdir}/Network/FTP \
+	Iconsdir=%{_pixmapsdir}
+
+mv -f $RPM_BUILD_ROOT%{_bindir}/gftp{-gtk,}
 
 %find_lang %{name}
 
