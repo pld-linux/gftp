@@ -5,7 +5,7 @@ Version:	2.0.6a
 Release:	1
 Group:		X11/Applications/Networking
 Group(pl):	X11/Aplikacje/Sieciowe
-Copyright:	GPL
+License:	GPL
 Source0:	http://gftp.seul.org/%{name}-%{version}.tar.gz
 Patch0:		gftp-pld.patch
 Patch1:		gftp-applnkdir.patch
@@ -18,18 +18,19 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 gFTP is a multithreaded FTP client for X Windows written using Gtk. It
-features simultaneous downloads, resuming of interrupted file transfers,
-file transfer queues, downloading of entire directories, ftp proxy support,
-remote directory caching, passive and non-passive file transfers,
-drag-n-drop support, bookmarks menu, stop button, and many more features.
+features simultaneous downloads, resuming of interrupted file
+transfers, file transfer queues, downloading of entire directories,
+ftp proxy support, remote directory caching, passive and non-passive
+file transfers, drag-n-drop support, bookmarks menu, stop button, and
+many more features.
 
 %description -l pl
-gFTP jest wielow±tkowym klientem FTP dla X Window wykorzystuj±cym bibliotekê
-gtk+. Pozwala na jednoczesne ¶ci±ganie wielu plików, wznawianie przerwanych
-transferów, kolejkowanie przesy³anych plików, ¶ci±ganie zawarto¶ci
-katalogów, mo¿liwo¶æ pracy z wykorzystaniem ftp proxy, ¶ci±gnie plików w
-trybie passiv i non-passive, drag-n-drop, zarz±dzanie po³±czeniami
-i wiele innych mo¿liwo¶ci.
+gFTP jest wielow±tkowym klientem FTP dla X Window wykorzystuj±cym
+bibliotekê gtk+. Pozwala na jednoczesne ¶ci±ganie wielu plików,
+wznawianie przerwanych transferów, kolejkowanie przesy³anych plików,
+¶ci±ganie zawarto¶ci katalogów, mo¿liwo¶æ pracy z wykorzystaniem ftp
+proxy, ¶ci±gnie plików w trybie passiv i non-passive, drag-n-drop,
+zarz±dzanie po³±czeniami i wiele innych mo¿liwo¶ci.
 
 %prep
 %setup -q
