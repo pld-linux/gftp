@@ -90,6 +90,7 @@ gFTP ╓ багатонитковим FTP кл╕╓нтом для X Window, написаним з
 %patch5 -p1
 
 mv -f po/{no,nb}.po
+
 %build
 rm -f missing aclocal.m4 acinclude.m4
 %{__aclocal}
