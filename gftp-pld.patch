@@ -1,15 +1,14 @@
-diff -aurN gftp-2.0.15rc1.orig/docs/sample.gftp/bookmarks gftp-2.0.15rc1/docs/sample.gftp/bookmarks
---- gftp-2.0.15rc1.orig/docs/sample.gftp/bookmarks	2002-08-05 21:46:57.000000000 +0200
-+++ gftp-2.0.15rc1/docs/sample.gftp/bookmarks	2003-07-25 14:30:28.000000000 +0200
+--- gftp-2.0.16.orig/docs/sample.gftp/bookmarks	2002-08-05 21:46:57.000000000 +0200
++++ gftp-2.0.16/docs/sample.gftp/bookmarks	2003-11-30 21:02:17.000000000 +0100
 @@ -172,6 +172,26 @@
  password=@EMAIL@
  account=
  
-+[PLD Sites/PLD Ra]
++[PLD Sites/PLD Ac]
 +hostname=ftp.pld-linux.org
 +port=21
 +protocol=FTP
-+remote directory=/dists/Ra
++remote directory=/dists/ac
 +local directory=
 +username=anonymous
 +password=@EMAIL@
