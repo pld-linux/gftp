@@ -1,6 +1,6 @@
 %define		_rc rc1
 Summary:	Multithreaded FTP client for X Window
-Summary(es):	Cliente FTP multithreaded para el X Windows
+Summary(es):	Cliente FTP multithreaded para el X Window
 Summary(ja):	X Window System Õ—•ﬁ•Î•¡•π•Ï•√•… FTP •Ø•È•§•¢•Û•»
 Summary(pl):	Wielow±tkowy klient FTP dla X Window
 Summary(pt_BR):	Cliente FTP multithreaded para o X Window
@@ -28,7 +28,7 @@ BuildRequires:	pkgconfig
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-gFTP is a multithreaded FTP client for X Windows written using Gtk. It
+gFTP is a multithreaded FTP client for X Window written using Gtk. It
 features simultaneous downloads, resuming of interrupted file
 transfers, file transfer queues, downloading of entire directories,
 ftp proxy support, remote directory caching, passive and non-passive
@@ -36,7 +36,7 @@ file transfers, drag-n-drop support, bookmarks menu, stop button, and
 many more features.
 
 %description -l es
-Cliente FTP multithreaded para el X Windows.
+Cliente FTP multithreaded para el X Window.
 
 %description -l ja
 gFTP §œ X Window System Õ—§Œ•ﬁ•Î•¡•π•Ï•√•… FTP •Ø•È•§•¢•Û•»§«§π°£
@@ -89,8 +89,8 @@ gFTP § ¬¡«¡‘œŒ…‘Àœ◊…Õ FTP ÀÃ¶§Œ‘œÕ ƒÃ— X Window, Œ¡–…”¡Œ…Õ ⁄
 %build
 rm -f missing aclocal.m4 acinclude.m4
 %{__aclocal}
-%{__autoheader}                                                                 
-%{__autoconf}                                                                   
+%{__autoheader}
+%{__autoconf}
 %{__automake}
 %configure \
 	--disable-textport
