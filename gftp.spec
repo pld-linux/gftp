@@ -2,7 +2,7 @@ Summary:	Multithreaded FTP client for X Window
 Summary(pl):	Wielow±tkowy klient FTP dla X Window
 Name:		gftp
 Version:	1.13	
-Release:	1
+Release:	2
 Group:		X11/Applications/Networking
 Group(pl):	X11/Aplikacje/Sieciowe
 Copyright:	GPL
@@ -12,7 +12,8 @@ Source2:	gftp.wmconfig
 Patch0:		gftp-DESTDIR.patch
 Patch1:		gftp-pld.patch
 URL:		http://www.newwave.net/~masneyb/
-Requires:	gtk+ = 1.2.1
+BuildPrereq:	gtk+-devel
+%requires_pkg	gtk+
 Buildroot:      /tmp/%{name}-%{version}-root
 
 %description
@@ -68,6 +69,10 @@ rm -rf $RPM_BUILD_ROOT
 %config(missingok) /etc/X11/wmconfig/gftp
 
 %changelog
+* Mon Apr 19 1999 Piotr Czerwiñski <pius@pld.org.pl>
+  [1.13-2]
+- recompiled on new rpm.
+
 * Thu Apr  1 1999 Piotr Czerwiñski <pius@pld.org.pl>
   [1.13-1]
 - updated to 1.13,
