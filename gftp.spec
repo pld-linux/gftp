@@ -13,7 +13,7 @@ Patch0:		gftp-DESTDIR.patch
 Patch1:		gftp-pld.patch
 URL:		http://www.newwave.net/~masneyb/
 BuildPrereq:	gtk+-devel
-%requires_pkg	gtk+
+Requires:	gtk+ >= 1.2.0
 Buildroot:      /tmp/%{name}-%{version}-root
 
 %description
