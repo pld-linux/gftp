@@ -2,7 +2,7 @@ Summary:	Multithreaded FTP client for X Window
 Summary(pl):	Wielow±tkowy klient FTP dla X Window
 Name:		gftp
 Version:	2.0.6a
-Release:	4
+Release:	5
 Group:		X11/Applications/Networking
 Group(pl):	X11/Aplikacje/Sieciowe
 License:	GPL
@@ -13,7 +13,8 @@ BuildRequires:	gtk+-devel >= 1.2.3
 BuildRequires:	gettext-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
-%define 	_prefix		/usr/X11R6
+%define		_prefix		/usr/X11R6
+%define		_mandir		%{_prefix}/man
 
 %description
 gFTP is a multithreaded FTP client for X Windows written using Gtk. It
