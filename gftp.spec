@@ -7,7 +7,7 @@ Summary(ru):	íÎÏÇÏÎÉÔÅ×ÙÊ FTP ËÌÉÅÎÔ ÄÌÑ X Window
 Summary(uk):	âÁÇÁÔÏÎÉÔËÏ×ÉÊ FTP ËÌ¦¤ÎÔ ÄÌÑ X Window
 Name:		gftp
 Version:	2.0.16
-Release:	1
+Release:	2
 Epoch:		2
 License:	GPL
 Group:		X11/Applications/Networking
@@ -27,10 +27,10 @@ BuildRequires:	pkgconfig
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-gFTP is a multithreaded FTP client for X Window written using Gtk. It
+gFTP is a multithreaded FTP client for X Window written using GTK+. It
 features simultaneous downloads, resuming of interrupted file
 transfers, file transfer queues, downloading of entire directories,
-ftp proxy support, remote directory caching, passive and non-passive
+FTP proxy support, remote directory caching, passive and non-passive
 file transfers, drag-n-drop support, bookmarks menu, stop button, and
 many more features.
 
@@ -48,15 +48,15 @@ gFTP ¤Ï¡¢Ê£¿ô¥Õ¥¡¥¤¥ë¤ÎÆ±»þ¥À¥¦¥ó¥í¡¼¥É¤ä¡¢ÃæÃÇ¤·¤¿Å¾Á÷¤Î
 
 %description -l pl
 gFTP jest wielow±tkowym klientem FTP dla X Window wykorzystuj±cym
-bibliotekê gtk+. Pozwala na jednoczesne ¶ci±ganie wielu plików,
+bibliotekê GTK+. Pozwala na jednoczesne ¶ci±ganie wielu plików,
 wznawianie przerwanych transferów, kolejkowanie przesy³anych plików,
-¶ci±ganie zawarto¶ci katalogów, mo¿liwo¶æ pracy z wykorzystaniem ftp
-proxy, ¶ci±gnie plików w trybie passiv i non-passive, drag-n-drop,
+¶ci±ganie zawarto¶ci katalogów, mo¿liwo¶æ pracy z wykorzystaniem FTP
+proxy, ¶ci±ganie plików w trybie pasywnym i nie-pasywnym, drag-n-drop,
 zarz±dzanie po³±czeniami i wiele innych mo¿liwo¶ci.
 
 %description -l pt_BR
 O gftp é um cliente FTP multithreaded para o X Window escrito usando a
-biblioteca gtk. Permite transferir arquivos simultâneamente, continuar
+biblioteca GTK+. Permite transferir arquivos simultâneamente, continuar
 transferências interrompidas, filas para transferências de arquivos e
 um gerenciador de conexões muito bom e muitas outras características.
 
@@ -100,7 +100,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT \
-	Utilitiesdir=%{_applnkdir}/Network/FTP \
+	Utilitiesdir=%{_desktopdir} \
 	Iconsdir=%{_pixmapsdir}
 
 mv -f $RPM_BUILD_ROOT%{_bindir}/gftp{-gtk,}
@@ -119,6 +119,6 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/gftp/*.xpm
 %config %{_datadir}/gftp/gftprc
 %config %{_datadir}/gftp/bookmarks
-%{_applnkdir}/Network/FTP/gftp.desktop
+%{_desktopdir}/gftp.desktop
 %{_mandir}/man1/*
 %{_pixmapsdir}/gftp.png
