@@ -39,12 +39,12 @@ zarz±dzanie po³±czeniami i wiele innych mo¿liwo¶ci.
 gettextize --copy --force
 LDFLAGS="-s"; export LDFLAGS
 %configure
-make 
+%{__make} 
 
 %install
 rm -rf $RPM_BUILD_ROOT
 
-make install \
+%{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT \
 	Utilitiesdir=%{_applnkdir}/Network/FTP
 
