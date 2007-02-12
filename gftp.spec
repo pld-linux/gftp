@@ -1,10 +1,10 @@
 Summary:	Multithreaded FTP client for X Window
-Summary(es):	Cliente FTP multithreaded para el X Window
-Summary(ja):	X Window System мя╔ч╔К╔а╔╧╔Л╔ц╔и FTP ╔╞╔И╔╓╔╒╔С╔х
-Summary(pl):	Wielow╠tkowy klient FTP dla X Window
-Summary(pt_BR):	Cliente FTP multithreaded para o X Window
-Summary(ru):	Многонитевый FTP клиент для X Window
-Summary(uk):	Багатонитковий FTP кл╕╓нт для X Window
+Summary(es.UTF-8):   Cliente FTP multithreaded para el X Window
+Summary(ja.UTF-8):   X Window System Г■╗Ц┐·Ц┐╚Ц┐│Ц┌╧Ц┐╛Ц┐┐Ц┐┴ FTP Ц┌╞Ц┐╘Ц┌╓Ц┌╒Ц┐ЁЦ┐┬
+Summary(pl.UTF-8):   Wielowд┘tkowy klient FTP dla X Window
+Summary(pt_BR.UTF-8):   Cliente FTP multithreaded para o X Window
+Summary(ru.UTF-8):   п°п╫п╬пЁп╬п╫п╦я┌п╣п╡я▀п╧ FTP п╨п╩п╦п╣п╫я┌ п╢п╩я▐ X Window
+Summary(uk.UTF-8):   п▒п╟пЁп╟я┌п╬п╫п╦я┌п╨п╬п╡п╦п╧ FTP п╨п╩я√я■п╫я┌ п╢п╩я▐ X Window
 Name:		gftp
 Version:	2.0.18
 Release:	4
@@ -36,49 +36,49 @@ FTP proxy support, remote directory caching, passive and non-passive
 file transfers, drag-n-drop support, bookmarks menu, stop button, and
 many more features.
 
-%description -l es
+%description -l es.UTF-8
 Cliente FTP multithreaded para el X Window.
 
-%description -l ja
-gFTP ╓о X Window System мя╓н╔ч╔К╔а╔╧╔Л╔ц╔и FTP ╔╞╔И╔╓╔╒╔С╔х╓г╓╧║ё
-gFTP ╓о║╒йё©Т╔у╔║╔╓╔К╓нф╠╩Ч╔ю╔╕╔С╔М║╪╔и╓Д║╒цФцг╓╥╓©е╬аВ╓н
-╔Л╔╦╔Е║╪╔Ю║╒йё©Т╓н╔у╔║╔╓╔К╓н╔ю╔╕╔С╔М║╪╔им╫лС║╒╔г╔ё╔Л╔╞╔х╔Й╓╢╓х╓н
-╔ю╔╕╔С╔М║╪╔и║╒ FTP ╔╣╔╓╔х╓н╔ж╔ц╔╞╔ч║╪╔╞║╒ FTP ╔╣╔╓╔х╓н╔г╔ё╔Л╔╞╔х╔Й
-╓н╔╜╔Ц╔ц╔╥╔Е║╒╔М║╪╔╚╔К╓х╔Й╔Б║╪╔х╓н╔у╔║╔╓╔К╓н╔я║╪╔ъ╔ц╔╥╔Г╔С╓нйя╧╧║╒
-╔и╔И╔ц╔╟╔╒╔С╔и╔и╔М╔ц╔в║╒╔Ё╔м╔╞╔╥╔Г╔С╔ч╔м║╪╔╦╔Ц║╒╓╫╓нб╬╓╓╓М╓╓╓М╓й
-╣║г╫╓Р╩Щ╓ц╓ф╓╓╓ч╓╧║ё
+%description -l ja.UTF-8
+gFTP Ц│╞ X Window System Г■╗Ц│╝Ц┐·Ц┐╚Ц┐│Ц┌╧Ц┐╛Ц┐┐Ц┐┴ FTP Ц┌╞Ц┐╘Ц┌╓Ц┌╒Ц┐ЁЦ┐┬Ц│╖Ц│≥Ц─┌
+gFTP Ц│╞Ц─│Х╓┤Ф∙╟Ц┐∙Ц┌║Ц┌╓Ц┐╚Ц│╝Е░▄Ф≥┌Ц┐─Ц┌╕Ц┐ЁЦ┐╜Ц┐╪Ц┐┴Ц┌└Ц─│Д╦╜Ф√╜Ц│≈Ц│÷Х╩╒И─│Ц│╝
+Ц┐╛Ц┌╦Ц┐╔Ц┐╪Ц┐═Ц─│Х╓┤Ф∙╟Ц│╝Ц┐∙Ц┌║Ц┌╓Ц┐╚Ц│╝Ц┐─Ц┌╕Ц┐ЁЦ┐╜Ц┐╪Ц┐┴Д╨┬Г╢└Ц─│Ц┐┤Ц┌ёЦ┐╛Ц┌╞Ц┐┬Ц┐╙Ц│■Ц│╗Ц│╝
+Ц┐─Ц┌╕Ц┐ЁЦ┐╜Ц┐╪Ц┐┴Ц─│ FTP Ц┌╣Ц┌╓Ц┐┬Ц│╝Ц┐√Ц┐┐Ц┌╞Ц┐·Ц┐╪Ц┌╞Ц─│ FTP Ц┌╣Ц┌╓Ц┐┬Ц│╝Ц┐┤Ц┌ёЦ┐╛Ц┌╞Ц┐┬Ц┐╙
+Ц│╝Ц┌╜Ц┐ёЦ┐┐Ц┌╥Ц┐╔Ц─│Ц┐╜Ц┐╪Ц┌╚Ц┐╚Ц│╗Ц┐╙Ц┐╒Ц┐╪Ц┐┬Ц│╝Ц┐∙Ц┌║Ц┌╓Ц┐╚Ц│╝Ц┐▒Ц┐╪Ц┐÷Ц┐┐Ц┌╥Ц┐╖Ц┐ЁЦ│╝Е╓┴Ф⌡╢Ц─│
+Ц┐┴Ц┐╘Ц┐┐Ц┌╟Ц┌╒Ц┐ЁЦ┐┴Ц┐┴Ц┐╜Ц┐┐Ц┐≈Ц─│Ц┌ЁЦ┐█Ц┌╞Ц┌╥Ц┐╖Ц┐ЁЦ┐·Ц┐█Ц┐╪Ц┌╦Ц┐ёЦ─│Ц│²Ц│╝Д╩√Ц│└Ц┌█Ц│└Ц┌█Ц│╙
+Ф╘÷Х┐╫Ц┌▓Ф▄│Ц│ёЦ│╕Ц│└Ц│╬Ц│≥Ц─┌
 
-%description -l pl
-gFTP jest wielow╠tkowym klientem FTP dla X Window wykorzystuj╠cym
-bibliotekЙ GTK+. Pozwala na jednoczesne ╤ci╠ganie wielu plikСw,
-wznawianie przerwanych transferСw, kolejkowanie przesyЁanych plikСw,
-╤ci╠ganie zawarto╤ci katalogСw, mo©liwo╤Ф pracy z wykorzystaniem FTP
-proxy, ╤ci╠ganie plikСw w trybie pasywnym i nie-pasywnym, drag-n-drop,
-zarz╠dzanie poЁ╠czeniami i wiele innych mo©liwo╤ci.
+%description -l pl.UTF-8
+gFTP jest wielowд┘tkowym klientem FTP dla X Window wykorzystujд┘cym
+bibliotekд≥ GTK+. Pozwala na jednoczesne е⌡ciд┘ganie wielu plikцЁw,
+wznawianie przerwanych transferцЁw, kolejkowanie przesyе┌anych plikцЁw,
+е⌡ciд┘ganie zawartoе⌡ci katalogцЁw, moе╪liwoе⌡д┤ pracy z wykorzystaniem FTP
+proxy, е⌡ciд┘ganie plikцЁw w trybie pasywnym i nie-pasywnym, drag-n-drop,
+zarzд┘dzanie poе┌д┘czeniami i wiele innych moе╪liwoе⌡ci.
 
-%description -l pt_BR
-O gftp И um cliente FTP multithreaded para o X Window escrito usando a
-biblioteca GTK+. Permite transferir arquivos simultБneamente, continuar
-transferЙncias interrompidas, filas para transferЙncias de arquivos e
-um gerenciador de conexУes muito bom e muitas outras caracterМsticas.
+%description -l pt_BR.UTF-8
+O gftp ц╘ um cliente FTP multithreaded para o X Window escrito usando a
+biblioteca GTK+. Permite transferir arquivos simultц╒neamente, continuar
+transferц╙ncias interrompidas, filas para transferц╙ncias de arquivos e
+um gerenciador de conexц╣es muito bom e muitas outras caracterц╜sticas.
 
-%description -l ru
-gFTP - многонитевый FTP клиент для X Window написаный с использованием
-GTK. Среди его возможностей одновременная загрузка многих файлов,
-продолжение прерваных передач файлов, очереди на передачу, загрузка
-целых каталогов, поддержка FTP прокси, кеш индексов удаленных
-каталогов, передача файлов в пасивном и непасивном режимах, поддержка
-"буксирования" файлов (drag-n-drop), меню закладок, кнопка останова и
-много другого.
+%description -l ru.UTF-8
+gFTP - п╪п╫п╬пЁп╬п╫п╦я┌п╣п╡я▀п╧ FTP п╨п╩п╦п╣п╫я┌ п╢п╩я▐ X Window п╫п╟п©п╦я│п╟п╫я▀п╧ я│ п╦я│п©п╬п╩я▄п╥п╬п╡п╟п╫п╦п╣п╪
+GTK. п║я─п╣п╢п╦ п╣пЁп╬ п╡п╬п╥п╪п╬п╤п╫п╬я│я┌п╣п╧ п╬п╢п╫п╬п╡я─п╣п╪п╣п╫п╫п╟я▐ п╥п╟пЁя─я┐п╥п╨п╟ п╪п╫п╬пЁп╦я┘ я└п╟п╧п╩п╬п╡,
+п©я─п╬п╢п╬п╩п╤п╣п╫п╦п╣ п©я─п╣я─п╡п╟п╫я▀я┘ п©п╣я─п╣п╢п╟я┤ я└п╟п╧п╩п╬п╡, п╬я┤п╣я─п╣п╢п╦ п╫п╟ п©п╣я─п╣п╢п╟я┤я┐, п╥п╟пЁя─я┐п╥п╨п╟
+я├п╣п╩я▀я┘ п╨п╟я┌п╟п╩п╬пЁп╬п╡, п©п╬п╢п╢п╣я─п╤п╨п╟ FTP п©я─п╬п╨я│п╦, п╨п╣я┬ п╦п╫п╢п╣п╨я│п╬п╡ я┐п╢п╟п╩п╣п╫п╫я▀я┘
+п╨п╟я┌п╟п╩п╬пЁп╬п╡, п©п╣я─п╣п╢п╟я┤п╟ я└п╟п╧п╩п╬п╡ п╡ п©п╟я│п╦п╡п╫п╬п╪ п╦ п╫п╣п©п╟я│п╦п╡п╫п╬п╪ я─п╣п╤п╦п╪п╟я┘, п©п╬п╢п╢п╣я─п╤п╨п╟
+"п╠я┐п╨я│п╦я─п╬п╡п╟п╫п╦я▐" я└п╟п╧п╩п╬п╡ (drag-n-drop), п╪п╣п╫я▌ п╥п╟п╨п╩п╟п╢п╬п╨, п╨п╫п╬п©п╨п╟ п╬я│я┌п╟п╫п╬п╡п╟ п╦
+п╪п╫п╬пЁп╬ п╢я─я┐пЁп╬пЁп╬.
 
-%description -l uk
-gFTP ╓ багатонитковим FTP кл╕╓нтом для X Window, написаним з
-використанням GTK. Серед його можливостей одночасн╕ завантаження
-багатьох файл╕в, продовження перерваних передач файл╕в, черги на
-передачу, завантаження ц╕лих каталог╕в, п╕дтримка FTP прокс╕, кеш
-╕ндекс╕в в╕ддалених каталог╕в, передача файл╕в в пасивному та
-непасивному режимах, п╕дтримка "буксування" файл╕в (drag-n-drop), меню
-закладинок, кнопка зупинки та багато ╕ншого.
+%description -l uk.UTF-8
+gFTP я■ п╠п╟пЁп╟я┌п╬п╫п╦я┌п╨п╬п╡п╦п╪ FTP п╨п╩я√я■п╫я┌п╬п╪ п╢п╩я▐ X Window, п╫п╟п©п╦я│п╟п╫п╦п╪ п╥
+п╡п╦п╨п╬я─п╦я│я┌п╟п╫п╫я▐п╪ GTK. п║п╣я─п╣п╢ п╧п╬пЁп╬ п╪п╬п╤п╩п╦п╡п╬я│я┌п╣п╧ п╬п╢п╫п╬я┤п╟я│п╫я√ п╥п╟п╡п╟п╫я┌п╟п╤п╣п╫п╫я▐
+п╠п╟пЁп╟я┌я▄п╬я┘ я└п╟п╧п╩я√п╡, п©я─п╬п╢п╬п╡п╤п╣п╫п╫я▐ п©п╣я─п╣я─п╡п╟п╫п╦я┘ п©п╣я─п╣п╢п╟я┤ я└п╟п╧п╩я√п╡, я┤п╣я─пЁп╦ п╫п╟
+п©п╣я─п╣п╢п╟я┤я┐, п╥п╟п╡п╟п╫я┌п╟п╤п╣п╫п╫я▐ я├я√п╩п╦я┘ п╨п╟я┌п╟п╩п╬пЁя√п╡, п©я√п╢я┌я─п╦п╪п╨п╟ FTP п©я─п╬п╨я│я√, п╨п╣я┬
+я√п╫п╢п╣п╨я│я√п╡ п╡я√п╢п╢п╟п╩п╣п╫п╦я┘ п╨п╟я┌п╟п╩п╬пЁя√п╡, п©п╣я─п╣п╢п╟я┤п╟ я└п╟п╧п╩я√п╡ п╡ п©п╟я│п╦п╡п╫п╬п╪я┐ я┌п╟
+п╫п╣п©п╟я│п╦п╡п╫п╬п╪я┐ я─п╣п╤п╦п╪п╟я┘, п©я√п╢я┌я─п╦п╪п╨п╟ "п╠я┐п╨я│я┐п╡п╟п╫п╫я▐" я└п╟п╧п╩я√п╡ (drag-n-drop), п╪п╣п╫я▌
+п╥п╟п╨п╩п╟п╢п╦п╫п╬п╨, п╨п╫п╬п©п╨п╟ п╥я┐п©п╦п╫п╨п╦ я┌п╟ п╠п╟пЁп╟я┌п╬ я√п╫я┬п╬пЁп╬.
 
 %prep
 %setup -q
