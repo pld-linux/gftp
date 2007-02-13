@@ -1,10 +1,10 @@
 Summary:	Multithreaded FTP client for X Window
-Summary(es.UTF-8):   Cliente FTP multithreaded para el X Window
-Summary(ja.UTF-8):   X Window System 用マルチスレッド FTP クライアント
-Summary(pl.UTF-8):   Wielowątkowy klient FTP dla X Window
-Summary(pt_BR.UTF-8):   Cliente FTP multithreaded para o X Window
-Summary(ru.UTF-8):   Многонитевый FTP клиент для X Window
-Summary(uk.UTF-8):   Багатонитковий FTP клієнт для X Window
+Summary(es.UTF-8):	Cliente FTP multithreaded para el X Window
+Summary(ja.UTF-8):	X Window System 用マルチスレッド FTP クライアント
+Summary(pl.UTF-8):	Wielowątkowy klient FTP dla X Window
+Summary(pt_BR.UTF-8):	Cliente FTP multithreaded para o X Window
+Summary(ru.UTF-8):	Многонитевый FTP клиент для X Window
+Summary(uk.UTF-8):	Багатонитковий FTP клієнт для X Window
 Name:		gftp
 Version:	2.0.18
 Release:	4
