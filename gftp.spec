@@ -7,7 +7,7 @@ Summary(ru.UTF-8):	Многонитевый FTP клиент для X Window
 Summary(uk.UTF-8):	Багатонитковий FTP клієнт для X Window
 Name:		gftp
 Version:	2.0.18
-Release:	4
+Release:	5
 Epoch:		2
 License:	GPL
 Group:		X11/Applications/Networking
@@ -26,6 +26,8 @@ BuildRequires:	gettext-devel
 BuildRequires:	gtk+2-devel >= 1:2.0.0
 BuildRequires:	openssl-devel >= 0.9.7d
 BuildRequires:	pkgconfig
+# sr@Latn vs. sr@latin
+Conflicts:	glibc-misc < 6:2.7
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -112,6 +114,8 @@ rm -rf $RPM_BUILD_ROOT
 
 mv -f $RPM_BUILD_ROOT%{_bindir}/gftp{-gtk,}
 
+[ -d $RPM_BUILD_ROOT%{_datadir}/locale/sr@latin ] || \
+	mv -f $RPM_BUILD_ROOT%{_datadir}/locale/sr@{Latn,latin}
 %find_lang %{name} --all-name
 
 %clean
