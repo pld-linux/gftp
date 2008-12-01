@@ -6,19 +6,18 @@ Summary(pt_BR.UTF-8):	Cliente FTP multithreaded para o X Window
 Summary(ru.UTF-8):	Многонитевый FTP клиент для X Window
 Summary(uk.UTF-8):	Багатонитковий FTP клієнт для X Window
 Name:		gftp
-Version:	2.0.18
-Release:	5
+Version:	2.0.19
+Release:	1
 Epoch:		2
-License:	GPL
+License:	GPL v2+
 Group:		X11/Applications/Networking
 Source0:	http://gftp.seul.org/%{name}-%{version}.tar.gz
-# Source0-md5:	4d449f79b225b0831692e9caa39a2028
+# Source0-md5:	4c0cab4b35e8666f5892b02125270a21
 Patch0:		%{name}-pld.patch
 Patch1:		%{name}-no_libnsl.patch
 Patch2:		%{name}-configure_in.patch
 Patch3:		%{name}-desktop.patch
-Patch4:		%{name}-locale_names.patch
-Patch5:		%{name}-gtk1_check.patch
+Patch4:		%{name}-gtk1_check.patch
 URL:		http://gftp.seul.org/
 BuildRequires:	autoconf
 BuildRequires:	automake
@@ -89,9 +88,6 @@ gFTP є багатонитковим FTP клієнтом для X Window, на�
 %patch2 -p1
 %patch3 -p1
 %patch4 -p1
-%patch5 -p1
-
-mv -f po/{no,nb}.po
 
 %build
 rm -f aclocal.m4 acinclude.m4
@@ -116,6 +112,7 @@ mv -f $RPM_BUILD_ROOT%{_bindir}/gftp{-gtk,}
 
 [ -d $RPM_BUILD_ROOT%{_datadir}/locale/sr@latin ] || \
 	mv -f $RPM_BUILD_ROOT%{_datadir}/locale/sr@{Latn,latin}
+
 %find_lang %{name} --all-name
 
 %clean
