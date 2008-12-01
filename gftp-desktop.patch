@@ -1,14 +1,13 @@
---- gftp-2.0.18/docs/gftp.desktop_old	2004-11-03 23:11:57.000000000 +0100
-+++ gftp-2.0.18/docs/gftp.desktop	2004-10-23 00:00:00.000000000 +0200
-@@ -1,12 +1,32 @@
+--- gftp-2.0.19/docs/gftp.desktop~	2008-12-01 12:40:15.000000000 +0100
++++ gftp-2.0.19/docs/gftp.desktop	2008-12-01 12:44:08.000000000 +0100
+@@ -1,16 +1,34 @@
  [Desktop Entry]
--Version=1.0
  Encoding=UTF-8
  Name=gFTP
--GenericName=gFTP
 -Comment=Download and upload files using multiple file transfer protocols
+-Comment[fr]=T√©l√©charge des fichiers en utilisant le protocole FTP
+-GenericName=gFTP
 -Exec=gftp %u
--TryExec=gftp
 +Name[br]=gFTP
 +Name[da]=gFTP
 +Name[de]=gFTP
@@ -21,22 +20,27 @@
 +Name[pt_BR]=gFTP
 +Name[zh_TW]=gFTP
 +Comment=Multithreaded ftp client
++Comment=Multithreaded ftp client
 +Comment[br]=Cliente de ftp multithreaded
 +Comment[da]=Flertr√•det ftpklient
 +Comment[de]=Multithreaded FTP Programm
 +Comment[es]=Cliente FTP multihilo
-+Comment[fr]=Client ftp multithread 
-+Comment[ja]=„Éû„É´„ÉÅ„Çπ„É¨„ÉÉ„ÉâFTP„ÇØ„É©„Ç§„Ç¢„É≥„Éà
-+Comment[ko]=Îã§Ï§ëÏì∞Î†àÎìú FTP ÌîÑÎ°úÍ∑∏Îû®
++Comment[fr]=Client ftp multithread
++Comment[ja]=„~C~^„~C´„~C~A„~Bπ„~C¨„~C~C„~C~IFTP„~BØ„~C©„~B§„~B¢„~C≥„~C~H
++Comment[ko]=Î~K§Ï§~QÏ~S∞Î| ~HÎ~S~\ FTP Ì~T~DÎ°~\Í∑∏Î~^®
 +Comment[nl]=Multithreaded ftp programma
-+Comment[pl]=WielowƒÖtkowy klient FTP
++Comment[pl]=Wielowƒ~Etkowy klient FTP
 +Comment[pt_BR]=Cliente FTP multi-tarefa
-+Comment[zh_TW]=Â§öÁ∑öÁ∑í  ftp client
++Comment[zh_TW]=Â§~ZÁ∑~ZÁ∑~R  ftp client
 +Exec=gftp
- Icon=gftp.png
--Terminal=0
-+Terminal=false
+ Terminal=false
+ X-MultipleArgs=false
  Type=Application
--Categories=Application;GTK;GNOME;Network;FileTransfer;
+ Icon=gftp.png
+-Categories=Application;Network;
+-X-GNOME-Bugzilla-Bugzilla=GNOME
+-X-GNOME-Bugzilla-Product=gftp
+-X-GNOME-Bugzilla-Component=general
+-X-GNOME-Bugzilla-Version=2.0.19
 +Categories=GTK;Network;FileTransfer;
 +# vi: encoding=utf-8
