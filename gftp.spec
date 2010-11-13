@@ -7,7 +7,7 @@ Summary(ru.UTF-8):	Многонитевый FTP клиент для X Window
 Summary(uk.UTF-8):	Багатонитковий FTP клієнт для X Window
 Name:		gftp
 Version:	2.0.19
-Release:	2
+Release:	3
 Epoch:		2
 License:	GPL v2+
 Group:		X11/Applications/Networking
